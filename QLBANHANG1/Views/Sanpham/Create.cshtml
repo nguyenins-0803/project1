@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Thêm mới sản phẩm";
+}
+
+
+<form action="/Sanpham/Create" method="post" class="container mt-4">
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    <div class="form-group">
+        <label for="ProductID" class="font-weight-bold">ProductID:</label>
+        <input type="text" name="ProductID" id="ProductID" class="form-control border-info" placeholder="Nhập ID sản phẩm" required />
+    </div>
+    <div class="form-group">
+        <label for="ProductName" class="font-weight-bold">ProductName:</label>
+        <input type="text" name="ProductName" id="ProductName" class="form-control border-info" placeholder="Nhập tên sản phẩm" required />
+    </div>
+    <div class="form-group">
+        <label for="Description" class="font-weight-bold">Description:</label>
+        <input type="text" name="Description" id="Description" class="form-control border-info" placeholder="Nhập mô tả sản phẩm" required />
+    </div>
+    <div class="form-group">
+        <label for="Price" class="font-weight-bold">Price:</label>
+        <input type="number" name="Price" id="Price" class="form-control border-info" step="5" placeholder="Nhập giá sản phẩm" required />
+    </div>
+    <div class="form-group">
+        <label for="StockQuantity" class="font-weight-bold">StockQuantity:</label>
+        <input type="number" name="StockQuantity" id="StockQuantity" class="form-control border-info" step="5" placeholder="Nhập số lượng tồn kho" required />
+    </div>
+    <div class="form-group">
+        <label for="ImageUrl" class="font-weight-bold">Image:</label>
+        <input type="text" name="ImageUrl" id="ImageUrl" class="form-control border-info" placeholder="Nhập URL hình ảnh" />
+    </div>
+    <div class="form-group">
+        <label for="CategoryID" class="font-weight-bold">CategoryID:</label>
+        <select name="CategoryID" id="CategoryID" class="form-control border-info" required>
+            @foreach (var category in ViewBag.Categories)
+            {
+                <option value="@category.CategoryID">@category.CategoryName</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn" style="background-color:darkblue; color:white;">Thêm mới</button>
+
+</form>
+
+<!-- Bootstrap CSS and JS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--Đây là view thông báo nhập sai-->
+@if (ViewData.ModelState.IsValid == false)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+
+

@@ -1,0 +1,46 @@
+﻿@model QLBANHANG1.Models.Product
+
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+}
+
+<h2>Chi tiết sản phẩm</h2>
+
+<div class="form-group">
+    <label class="font-weight-bold">Product ID:</label>
+    <p>@Model.ProductID</p>
+</div>
+
+<div class="form-group">
+    <label class="font-weight-bold">Product Name:</label>
+    <p>@Model.ProductName</p>
+</div>
+
+<div class="form-group">
+    <label class="font-weight-bold">Description:</label>
+    <p>@Model.Description</p>
+</div>
+
+<div class="form-group">
+    <label class="font-weight-bold">Price:</label>
+    <p>@Model.Price.ToString("C0") VND</p> <!-- Hiển thị giá theo định dạng VND -->
+</div>
+
+<div class="form-group">
+    <label class="font-weight-bold">Stock Quantity:</label>
+    <p>@Model.StockQuantity</p>
+</div>
+
+<div class="form-group">
+    <label class="font-weight-bold">Category ID:</label>
+    <p>@Model.CategoryID</p>
+</div>
+
+<div class="form-group">
+    <label class="font-weight-bold">Created At:</label>
+    <p>@Model.CreatedAt?.ToString("dd/MM/yyyy")</p> <!-- Hiển thị ngày tháng nếu có -->
+</div>
+
+<a href="@Url.Action("Index", "Sanpham")" class="btn btn-secondary">Quay lại</a>
+
+

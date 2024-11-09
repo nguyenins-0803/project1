@@ -1,0 +1,234 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|c:\\users\\pc\\source\\repos\\qlbanhang1\\qlbanhang1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\views\\sanpham\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\views\\sanpham\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\views\\danhmuc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\views\\danhmuc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\views\\danhmuc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\views\\danhmuc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\controllers\\danhmuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\controllers\\danhmuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\views\\danhmuc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\views\\danhmuc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Sanpham\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:QLBANHANG1\\Views\\Sanpham\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\views\\sanpham\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\views\\sanpham\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|C:\\Users\\PC\\source\\repos\\QLBANHANG1\\qlbanhang1\\views\\danhmuc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F406C7E1-8CFD-4801-9132-E84EC0629C2D}|QLBANHANG1\\QLBANHANG1.csproj|solutionrelative:qlbanhang1\\views\\danhmuc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "QLBANHANG1\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowC0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T04:33:34.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T04:30:42.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Sanpham\\Details.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\Sanpham\\Details.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Sanpham\\Details.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\Sanpham\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T04:28:23.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\DanhMuc\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\DanhMuc\\Create.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\DanhMuc\\Create.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\DanhMuc\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABcAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T19:03:03.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SanphamController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Controllers\\SanphamController.cs",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Controllers\\SanphamController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Controllers\\SanphamController.cs",
+              "RelativeToolTip": "QLBANHANG1\\Controllers\\SanphamController.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAwwKsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:00:49.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\DanhMuc\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\DanhMuc\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\DanhMuc\\Edit.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\DanhMuc\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T18:38:41.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAwwBQBAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T08:56:44.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\DanhMuc\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\DanhMuc\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\DanhMuc\\Index.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\DanhMuc\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T08:37:00.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DanhMucController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Controllers\\DanhMucController.cs",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Controllers\\DanhMucController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Controllers\\DanhMucController.cs",
+              "RelativeToolTip": "QLBANHANG1\\Controllers\\DanhMucController.cs",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAwwLsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T03:52:27.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Sanpham\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\Sanpham\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Sanpham\\Index.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\Sanpham\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-13T15:39:56.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Sanpham\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\Sanpham\\Create.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Sanpham\\Create.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\Sanpham\\Create.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACoAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T03:26:03.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\DanhMuc\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\DanhMuc\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\DanhMuc\\Delete.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\DanhMuc\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T19:36:41.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Sanpham\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QLBANHANG1\\Views\\Sanpham\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\QLBANHANG1\\QLBANHANG1\\Views\\Sanpham\\Edit.cshtml",
+              "RelativeToolTip": "QLBANHANG1\\Views\\Sanpham\\Edit.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-07T06:26:32.804Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

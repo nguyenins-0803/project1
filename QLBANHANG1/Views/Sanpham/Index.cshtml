@@ -1,0 +1,73 @@
+﻿@model IEnumerable<QLBANHANG1.Models.Product>
+
+@{
+    ViewBag.Title = "Danh sách sản phẩm";
+}
+
+
+<a href="/Sanpham/Create" class="btn" style="background-color:darkblue; color:white; border:hidden;">Thêm mới</a>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ProductID</th>
+            <th>ProductName</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>StockQuantity</th>
+            <th>CategoryID</th>
+            <th>CreatedAt</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProductID</td>
+                <td>@product.ProductName</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>@product.StockQuantity</td>
+                <td>@product.CategoryID</td>
+                <td>@product.CreatedAt</td>
+                <td>
+
+                    <div>
+                        <a href="/Sanpham/Edit?id=@product.ProductID " class="btn" style="background-color: darkblue; color: white;"> Sửa</a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <a href="/Sanpham/Delete?id=@product.ProductID " class="btn" style="background-color:darkblue; color:white;"> Xóa</a>
+
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <a href="/Sanpham/Details?id=@product.ProductID " class="btn" style="background-color:darkblue; color:white;"> Chi tiết</a>
+
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Đây là view Index -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="success-message" class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    // Ẩn thông báo sau 3 giây với hiệu ứng fade out
+    setTimeout(function () {
+        $('#success-message').fadeOut('slow');
+    }, 3000);
+</script>

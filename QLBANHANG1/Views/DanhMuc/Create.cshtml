@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Thêm mới danh mục";
+}
+
+<form id="createCategoryForm" class="container mt-4">
+    <div class="form-group">
+        <label for="CategoryID" class="font-weight-bold">CategoryID:</label>
+        <input type="text" name="CategoryID" id="CategoryID" class="form-control border-info" placeholder="Nhập ID danh mục" required />
+    </div>
+    <div class="form-group">
+        <label for="CategoryName" class="font-weight-bold">CategoryName:</label>
+        <input type="text" name="CategoryName" id="CategoryName" class="form-control border-info" placeholder="Nhập tên danh mục" required />
+    </div>
+    <div class="form-group">
+        <label for="Description" class="font-weight-bold">Description:</label>
+        <input type="text" name="Description" id="Description" class="form-control border-info" placeholder="Nhập mô tả danh mục" />
+    </div>
+    <div class="form-group">
+        <label for="ParentCategoryID" class="font-weight-bold">Danh mục cha:</label>
+        <select name="ParentCategoryID" id="ParentCategoryID" class="form-control border-info">
+            <option value="">Chọn danh mục cha</option>
+            @if (ViewBag.ParentCategories != null)
+            {
+                foreach (var category in ViewBag.ParentCategories)
+                {
+                    <option value="@category.CategoryID">@category.CategoryID - @category.CategoryName</option>
+                }
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn" style="background-color:darkblue; color:white">Thêm mới</button>
+</form>
+
+<!-- Bootstrap CSS and JS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#createCategoryForm').on('submit', function (e) {
+                e.preventDefault();
+
+                // Lấy dữ liệu từ form
+                var formData = $(this).serialize();
+
+                // Gửi ajax request
+                $.ajax({
+                    url: '@Url.Action("Create", "DanhMuc")',
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        if (response.success) {
+                            toastr.success(response.message|| { timeOut: 4000 }); // Hiển thị thông báo thành công
+                            window.location.href = '@Url.Action("Index", "DanhMuc")';
+                        } else {
+                            toastr.error(response.message); // Hiển thị thông báo lỗi
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        // Log lỗi để debug
+                        console.error('Error:', error);
+                        toastr.error("Đã xảy ra lỗi khi thêm mới danh mục");
+                    }
+                });
+            });
+
+            // Thêm validation cho form nếu cần
+            $('#CategoryID').on('input', function() {
+                // Loại bỏ khoảng trắng và ký tự đặc biệt nếu cần
+                $(this).val($(this).val().replace(/[^a-zA-Z0-9]/g, ''));
+            });
+
+            $('#CategoryName').on('input', function() {
+                // Giới hạn độ dài nếu cần
+                if ($(this).val().length > 100) {
+                    $(this).val($(this).val().substring(0, 100));
+                }
+            });
+        });
+    </script>
+}
+

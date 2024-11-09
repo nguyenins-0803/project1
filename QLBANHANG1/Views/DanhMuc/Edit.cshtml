@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Sửa thông tin danh mục tại đây";
+    string id = Request.QueryString["id"];
+}
+
+<h2>Sửa đối tượng có ID là @id</h2>
+
+<form id="editCategoryForm" class="container mt-4">
+    <div class="form-group">
+        <label for="CategoryID" class="font-weight-bold">CategoryID:</label>
+        <input type="text" name="CategoryID" id="CategoryID" class="form-control border-info" placeholder="Nhập ID danh mục" required readonly />
+    </div>
+    <div class="form-group">
+        <label for="CategoryName" class="font-weight-bold">CategoryName:</label>
+        <input type="text" name="CategoryName" id="CategoryName" class="form-control border-info" placeholder="Nhập tên danh mục" required />
+    </div>
+    <div class="form-group">
+        <label for="Description" class="font-weight-bold">Description:</label>
+        <input type="text" name="Description" id="Description" class="form-control border-info" placeholder="Nhập mô tả danh mục" />
+    </div>
+    <div class="form-group">
+        <label for="ParentCategoryID" class="font-weight-bold">Danh mục cha:</label>
+        <select name="ParentCategoryID" id="ParentCategoryID" class="form-control border-info">
+            <option value="">Chọn danh mục cha</option>
+            @if (ViewBag.ParentCategories != null)
+            {
+                foreach (var category in ViewBag.ParentCategories)
+                {
+                    <option value="@category.CategoryID">@category.CategoryID - @category.CategoryName</option>
+                }
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn" style="background-color:darkblue; color:white">Sửa</button>
+</form>
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Tải thông tin danh mục khi trang được tải
+            $.ajax({
+                url: '@Url.Action("GetCategoryById", "DanhMuc")',
+                type: 'GET',
+                data: { id: '@id' },
+                success: function(data) {
+                    if (data.success) {
+                        $('#CategoryID').val(data.CategoryID);
+                        $('#CategoryName').val(data.CategoryName);
+                        $('#Description').val(data.Description);
+                        $('#ParentCategoryID').val(data.ParentCategoryID);
+
+                        // Nếu ParentCategoryID có giá trị, hãy chọn nó trong dropdown
+                        if (data.ParentCategoryID) {
+                            $('#ParentCategoryID').val(data.ParentCategoryID);
+                        }
+                    } else {
+                        toastr.error(data.message);
+                    }
+                },
+                error: function() {
+                    toastr.error("Đã xảy ra lỗi khi tải thông tin danh mục.");
+                }
+            });
+
+            $('#editCategoryForm').submit(function(e) {
+                e.preventDefault(); // Ngăn chặn gửi form mặc định
+
+                $.ajax({
+                    url: '@Url.Action("PostEdit", "DanhMuc")',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        if (response.success) {
+                            toastr.success(response.message);
+                            setTimeout(function() {
+                                window.location.href = '@Url.Action("Index", "DanhMuc")'; // Chuyển hướng về danh sách sau khi cập nhật
+                            }, 2000); // Thời gian chờ 2 giây trước khi chuyển hướng
+                        } else {
+                            toastr.error(response.message);
+                        }
+                    },
+                    error: function() {
+                        toastr.error("Đã xảy ra lỗi khi cập nhật danh mục.");
+                    }
+                });
+            });
+        });
+    </script>
+}

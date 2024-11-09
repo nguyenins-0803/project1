@@ -1,0 +1,135 @@
+﻿
+@model IEnumerable<QLBANHANG1.Models.Product>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INS LEATHER</title>
+    <link rel="stylesheet" href="~/Content/Site.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e97b60;
+        }
+
+        .search-container {
+            margin: 20px 0;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #e97b60;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+            button:hover {
+                background-color: #d56a52;
+            }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+            .product img {
+                width: 100%;
+                height: auto;
+            }
+
+        .product-title {
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-price {
+            color: #e97b60;
+            font-size: 14px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        /* Thông báo không có sản phẩm */
+        .no-results {
+            text-align: center;
+            font-size: 18px;
+            color: #e97b60;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">INS LEATHER</div>
+        <div class="search-container">
+            <form method="get" action="@Url.Action("Search", "Home")">
+                <input type="text" id="search" name="query" placeholder="Tìm kiếm sản phẩm..." value="@Request.QueryString["query"]" />
+                <button type="submit">Tìm</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="product-grid">
+        @if (!Model.Any())
+        {
+            <p class="no-results">Không tìm thấy sản phẩm nào!</p>
+        }
+        else
+        {
+            foreach (var product in Model)
+            {
+                <div class="product">
+                    <a href="@Url.Action("Details", "Home", new { id = product.ProductID })">
+                        <img src="@Url.Content("~/Library/dist/img/products/" + product.ImageUrl)" alt="@product.ProductName" />
+                        <div class="product-title">@product.ProductName</div>
+                        <div class="product-price">@product.Price.ToString("N0") VND</div>
+                    </a>
+                </div>
+            }
+        }
+    </div>
+
+</body>
+</html>

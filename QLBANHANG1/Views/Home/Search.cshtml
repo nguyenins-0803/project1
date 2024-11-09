@@ -1,0 +1,27 @@
+﻿@model IEnumerable<QLBANHANG1.Models.Product>
+
+
+@{
+    ViewBag.Title = "Trang Chủ";
+}
+
+<h2>Trang Chủ</h2>
+
+<!-- Form tìm kiếm -->
+<form method="get" action="@Url.Action("Search", "Home")">
+    <input type="text" name="searchTerm" placeholder="Nhập tên sản phẩm hoặc danh mục..." />
+    <button type="submit">Tìm Kiếm</button>
+</form>
+
+<!-- Hiển thị danh sách sản phẩm -->
+<div class="product-list">
+    @foreach (var product in Model)
+    {
+        <div class="product-item">
+            <img src="~/Library/dist/img/products/@product.ImageUrl" alt="@product.ProductName" />
+            <h3>@product.ProductName</h3>
+            <p>@product.Description</p>
+            <p>Giá: @product.Price.ToString("N0") VND</p>
+        </div>
+    }
+</div>

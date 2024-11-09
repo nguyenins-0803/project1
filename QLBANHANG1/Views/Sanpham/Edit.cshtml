@@ -1,0 +1,73 @@
+﻿@model QLBANHANG1.Models.Product
+@{
+    ViewBag.Title = "Sửa thông tin tại đây";
+    string abc = Request["id"];
+
+}
+
+<h2>Sửa đối tượng có ID là @abc </h2>
+<form action="/Sanpham/PostEdit" method="post">
+    <div class="form-group">
+        <label for="ProductID" class="font-weight-bold">ProductID:</label>
+        <input type="text" name="ProductID" id="ProductID" class="form-control border-info" value="@Model.ProductID" readonly />
+    </div>
+    <div class="form-group">
+        <label for="ProductName" class="font-weight-bold">ProductName:</label>
+        <input type="text" name="ProductName" id="ProductName" class="form-control border-info" value="@Model.ProductName" />
+    </div>
+    <div class="form-group">
+        <label for="Description" class="font-weight-bold">Description:</label>
+        <input type="text" name="Description" id="Description" class="form-control border-info" value="@Model.Description" />
+    </div>
+    <div class="form-group">
+        <label for="Price" class="font-weight-bold">Price:</label>
+        <input type="text" name="Price" id="Price" class="form-control border-info" step="5" value="@Model.Price" />
+    </div>
+    <div class="form-group">
+        <label for="StockQuantity" class="font-weight-bold">StockQuantity:</label>
+        <input type="text" name="StockQuantity" id="StockQuantity" class="form-control border-info" step="5" value="@Model.StockQuantity" />
+    </div>
+    <div class="form-group">
+        <label for="Image" class="font-weight-bold">Image:</label>
+        <input type="text" name="Image" id="ImageUrl" class="form-control border-info" value="@Model.ImageUrl" />
+    </div>
+
+    <div class="form-group">
+        <label for="CategoryName" class="font-weight-bold">CategoryName:</label>
+        <select name="CategoryID" id="CategoryName" class="form-control border-info" required>
+            @foreach (var category in ViewBag.Categories)
+            {
+                <option value="@category.CategoryID" @(category.CategoryID == Model.CategoryID ? "selected" : "")>
+                    @category.CategoryName
+                </option>
+            }
+        </select>
+    </div>
+
+
+    @*<input type="submit" name="Submit" value="Sửa" />
+        <a href="@Url.Action("Index")" class="btn btn-default">Hủy</a>*@
+    <div>
+        <input type="submit" name="Submit" value="Sửa" class="btn" style="background-color:darkblue; color:white;" />
+        <a href="@Url.Action("Index")" class="btn" style="background-color:darkblue; color:white; border: none;">Hủy</a>
+
+    </div>
+
+
+</form>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+
+

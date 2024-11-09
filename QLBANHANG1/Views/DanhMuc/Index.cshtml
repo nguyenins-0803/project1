@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Danh sách danh mục";
+}
+
+<div>
+    <button type="button" class="btn" style="background-color:darkblue; color:white;" onclick="location.href='@Url.Action("Create", "DanhMuc")'">
+        Thêm danh mục mới
+    </button>
+</div>
+<div>
+    <table id="categoryList" class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên danh mục</th>
+                <th>Mô tả</th>
+                <th>ID danh mục cha</th>
+                <th>Tên danh mục cha</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Tải danh sách danh mục khi trang được tải
+            $.ajax({
+                url: '@Url.Action("GetListDanhMuc", "DanhMuc")',
+                type: 'POST',
+                dataType: 'json',
+                success: function(data) {
+                    var str = $('#categoryList tbody');
+                    str.empty();
+                    if (data.length === 0) {
+                        toastr.info("Không có danh mục nào.");
+                    } else {
+                        $.each(data, function(index, category) {
+                            var row = "<tr><td>" + category.CategoryID + "</td>" +
+                                      "<td>" + category.CategoryName + "</td>" +
+                                      "<td>" + category.Description + "</td>" +
+                                      "<td>" + category.ParentCategoryID + "</td>" +
+                                      "<td>" + category.ParentCategoryName + "</td>" +
+                                      "<td><a href='/DanhMuc/Edit?id=" + category.CategoryID + "' class='btn' style='background-color: darkblue; color: white;'>Sửa</a></td>" +
+                                      "<td><button class='btn delete-btn' style='background-color: darkblue; color: white;' data-id='" + category.CategoryID + "'>Xóa</button></td>" +
+                                      "</tr>";
+                            str.append(row);
+                        });
+                        toastr.success("Danh sách danh mục đã được tải thành công.");
+                    }
+                },
+                error: function() {
+                    toastr.error("Đã xảy ra lỗi khi load danh mục.");
+                }
+            });
+
+            // Xóa danh mục khi nhấn nút
+            $(document).on('click', '.delete-btn', function() {
+                var id = $(this).data('id'); // Lấy ID từ data-id
+                if (confirm("Bạn có chắc chắn muốn xóa danh mục này?")) {
+                    $.ajax({
+                        url: '@Url.Action("Delete", "DanhMuc")',
+                        type: 'POST',
+                        data: { id: id },
+                        success: function(response) {
+                            if (response.success) {
+                                toastr.success(response.message);
+                                // Tải lại danh sách danh mục
+                                location.reload();
+                            } else {
+                                toastr.error(response.message);
+                            }
+                        },
+                        error: function() {
+                            toastr.error("Đã xảy ra lỗi khi xóa danh mục.");
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}
